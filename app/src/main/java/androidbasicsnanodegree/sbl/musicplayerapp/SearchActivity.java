@@ -70,7 +70,7 @@ public class SearchActivity extends AppCompatActivity {
 
             @Override
             public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-                Log.d("COUCOU", "*** Search value changed: " + charSequence.toString());
+                Log.d("MESSAGE", "*** Search value changed: " + charSequence.toString());
                 adapter.getFilter().filter(charSequence);
 
 
