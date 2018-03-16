@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Strings array for songs titles and artist -->
+
+    <string-array name="songNames">
+        <item>Power Of A Broken Heart</item>
+        <item>Mystery Of Monsters</item>
+        <item>There Goes That Enemies</item>
+        <item>Loved By That Broken Dreams</item>
+        <item> Stormy Fights</item>
+        <item> Midnight Dreams</item>
+        <item>Baby, So Do I</item>
+        <item>I Like The Way You Move</item>
+        <item>I Think I Got It</item>
+        <item>She Hates He's Innocent</item>
+        <item>Drive For A Rainy Day</item>
+        <item>Cash Of Thunder</item>
+        <item>I Love That Behavior</item>
+        <item> Soul Of Her Rhythm</item>
+        <item>Welcome Lyrics</item>
+        <item>Sweet Miracles</item>
+        <item>Honey, Make Your Choice</item>
+        <item>I Got It</item>
+        <item>He Hopes She Did It Like That</item>
+        <item>He Hates You're A Gangsta</item>
+    </string-array>
+
+    <string-array name="songArtist">
+        <item>Davy Maret</item>
+        <item>Edmond Loupe</item>
+        <item> Nicolas Colbert</item>
+        <item>Abelin Dimont</item>
+        <item> Léonard Chardin</item>
+        <item> Laurent Corriveau</item>
+        <item>Serge Cartier</item>
+        <item> Néo Lortie</item>
+        <item>Robin Bouthillier</item>
+        <item>Léon Rémy</item>
+        <item> Jennifer Jeannin</item>
+        <item> Sabine Pélissier</item>
+        <item> Angélique Kaplan</item>
+        <item>Lise Paquin</item>
+        <item> Gwenaëlle Pierlot</item>
+        <item>Zoé Ballouhey</item>
+        <item>Iseult Abadie</item>
+        <item>Sonia Bourcier</item>
+        <item>Sigolène Grosjean</item>
+        <item> Alix Asselin</item>
+    </string-array>
+
+</resources>

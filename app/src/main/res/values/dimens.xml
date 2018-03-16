@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Main Activity Dimensions -->
+
+    <dimen name="mainButtonWidth">140dp</dimen>
+    <dimen name="mainButtonHeight">140dp</dimen>
+    <dimen name="imageWidth">70dp</dimen>
+    <dimen name="imageHeight">70dp</dimen>
+    <dimen name="mainButtonStandardMargin">24dp</dimen>
+    <dimen name="centerViewSize">0dp</dimen>
+    <dimen name="imagePadding">8dp</dimen>
+    <dimen name="buttonTextSize">20sp</dimen>
+
+
+    <!-- List song layout dimensions -->
+
+    <dimen name="paddingStandard">16dp</dimen>
+    <dimen name="imageDimensions">50dp</dimen>
+    <dimen name="textLayout">0dp</dimen>
+
+
+    <!-- Play song layout dimensions -->
+
+    <dimen name="grandImageHeight">200dp</dimen>
+
+</resources>

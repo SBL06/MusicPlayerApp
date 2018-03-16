@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Music Player App</string>
+
+    <!-- Strings for Main activity -->
+    <string name="musicString">Music</string>
+    <string name="storeString">Store</string>
+    <string name="searchString">Search</string>
+
+</resources>

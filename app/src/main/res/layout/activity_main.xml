@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/mainLayout"
+    tools:context="androidbasicsnanodegree.sbl.musicplayerapp.MainActivity">
+
+    <View
+        android:id="@+id/centerView"
+        android:layout_width="@dimen/centerViewSize"
+        android:layout_height="@dimen/centerViewSize"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
+
+
+
+    <LinearLayout
+        android:id="@+id/musicButton"
+        style="@style/mainButtons"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/centerView">
+
+        <ImageView style="@style/mainButtonsImages"
+            android:src="@drawable/note" />
+
+        <TextView
+            style="@style/mainButtonsText"
+            android:text="@string/musicString"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/storeButton"
+        style="@style/mainButtons"
+        android:layout_below="@+id/centerView"
+        android:layout_toLeftOf="@id/centerView">
+
+        <ImageView style="@style/mainButtonsImages"
+            android:src="@drawable/dollar"/>
+
+        <TextView style="@style/mainButtonsText"
+            android:text="@string/storeString"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/searchButton"
+        style="@style/mainButtons"
+        android:layout_below="@id/centerView"
+        android:layout_toRightOf="@id/centerView">
+
+        <ImageView style="@style/mainButtonsImages"
+            android:src="@drawable/glass"/>
+
+        <TextView style="@style/mainButtonsText"
+            android:text="@string/searchString"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
