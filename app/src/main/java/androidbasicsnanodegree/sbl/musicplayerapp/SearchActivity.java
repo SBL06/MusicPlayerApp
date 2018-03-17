@@ -47,6 +47,7 @@ public class SearchActivity extends AppCompatActivity {
 
         songList.setAdapter(adapter);
 
+        // The following code is set in order to, when a Song is clicked, send the song infos to the PlaySong Activity
         songList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
@@ -62,26 +63,21 @@ public class SearchActivity extends AppCompatActivity {
 
         searchField = findViewById(R.id.searchEditText) ;
 
+        // Following code is setting a change listener in the EditText field so the filter is applied
+        // every time the user types a character
         searchField.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-
             }
 
             @Override
             public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-                Log.d("MESSAGE", "*** Search value changed: " + charSequence.toString());
                 adapter.getFilter().filter(charSequence);
-
-
             }
 
             @Override
             public void afterTextChanged(Editable editable) {
-
-
             }
         });
-
     }
 }

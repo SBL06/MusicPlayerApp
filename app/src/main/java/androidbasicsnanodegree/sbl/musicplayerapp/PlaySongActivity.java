@@ -18,6 +18,8 @@ public class PlaySongActivity extends AppCompatActivity {
         TextView name = findViewById(R.id.songPlayName) ;
         TextView artist = findViewById(R.id.songPlayArtist) ;
 
+        //Infos about the song currently playing are sent by the MusicList or SearchList Activity
+        // and retrieved here
         int imageId = getIntent().getIntExtra("songImage" , 0) ;
         String nameSong = getIntent().getStringExtra("songName") ;
         String artistSong = getIntent().getStringExtra("songArtist") ;

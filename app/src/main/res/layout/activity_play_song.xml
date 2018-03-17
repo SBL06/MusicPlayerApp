@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -7,51 +8,37 @@
     android:background="@color/backgroundPrimary"
     tools:context="androidbasicsnanodegree.sbl.musicplayerapp.PlaySongActivity">
 
-
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:layout_alignParentTop="true">
-
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/grandImageHeight"
-        android:padding="@dimen/paddingStandard"
-        android:id="@+id/songPlayImage"
-        android:background="@color/colorPrimary" />
-
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        android:textSize="@dimen/buttonTextSize"
-        android:background="@color/backgroundPrimary"
-        android:padding="@dimen/paddingStandard"
-        android:id="@+id/songPlayName" />
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:background="@color/backgroundPrimary"
-        android:textSize="@dimen/buttonTextSize"
-        android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        android:padding="@dimen/paddingStandard"
-        android:id="@+id/songPlayArtist" />
+        <ImageView
+            android:id="@+id/songPlayImage"
+            style="@style/playImageStyle" />
 
-</LinearLayout>
+        <TextView
+            android:id="@+id/songPlayName"
+            style="@style/playTextStyle" />
+
+        <TextView
+            android:id="@+id/songPlayArtist"
+            style="@style/playTextStyle" />
+
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:background="@color/colorPrimary"
-        android:layout_alignParentBottom="true">
+        android:layout_height="@dimen/playButtonsLine"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary">
 
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:src="@drawable/play"/>
+            android:src="@drawable/play" />
 
         <ImageView
             android:layout_width="match_parent"
@@ -59,7 +46,7 @@
             android:layout_weight="1"
             android:scaleX="0.7"
             android:scaleY="0.7"
-            android:src="@drawable/pause"/>
+            android:src="@drawable/pause" />
 
     </LinearLayout>
 

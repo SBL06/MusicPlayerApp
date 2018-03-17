@@ -15,12 +15,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Following code is changing the color of the icons, and make the change of colors easy
-        // instead of directly changing the drawable color
         Drawable note = getDrawable(R.drawable.note) ;
         Drawable dollar = getDrawable(R.drawable.dollar) ;
         Drawable glass = getDrawable(R.drawable.glass) ;
 
+        // Following code is changing the color of the icons, and make the change of colors easy
+        // instead of directly changing the drawable color
         note.setColorFilter(getColor(R.color.colorAccent), PorterDuff.Mode.SRC_IN);
         dollar.setColorFilter(getColor(R.color.colorAccent), PorterDuff.Mode.SRC_IN);
         glass.setColorFilter(getColor(R.color.colorAccent), PorterDuff.Mode.SRC_IN);
@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
         View storeButton = findViewById(R.id.storeButton) ;
         View searchButton = findViewById(R.id.searchButton) ;
 
+        //An OnClickListener is set for each button of the main screen
         musicButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -45,6 +46,12 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
+       storeButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, StoreActivity.class) ;
+                startActivity(intent);
+            }
+        });
     }
 }

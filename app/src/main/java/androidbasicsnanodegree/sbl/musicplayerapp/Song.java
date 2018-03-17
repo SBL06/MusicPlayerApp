@@ -3,19 +3,18 @@ package androidbasicsnanodegree.sbl.musicplayerapp;
 import android.graphics.drawable.Drawable;
 import android.media.Image;
 
-/**
- * Created by Android on 15/03/2018.
- */
+
+// Custom objects storing informations about a specific song, including an image
 
 public class Song {
     private String mName ;
     private String mArtist ;
     private int mImage ;
 
-    public Song (String name, String artist, int drawable) {
-        mName = name ;
-        mArtist = artist ;
-        mImage = drawable ;
+    public Song (String mName, String mArtist, int mDrawable) {
+        this.mName = mName ;
+        this.mArtist = mArtist ;
+        this.mImage = mDrawable ;
     }
 
     public String getSongName() {
@@ -30,4 +29,13 @@ public class Song {
         return mImage ;
     }
 
+    // Overriding the toString method in order to display only texts infos about the song
+    //That method is used for the custom filter.
+    @Override
+    public String toString() {
+        return "Song{" +
+                "mName='" + mName + '\'' +
+                ", mArtist='" + mArtist + '\'' +
+                '}';
+    }
 }

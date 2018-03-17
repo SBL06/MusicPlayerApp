@@ -1,20 +1,18 @@
 package androidbasicsnanodegree.sbl.musicplayerapp;
 
-import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.AdapterView;
+import android.widget.GridView;
 import android.widget.ListView;
 
 import java.util.ArrayList;
 
-public class MusicListActivity extends AppCompatActivity {
+public class StoreActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_music_list);
+        setContentView(R.layout.activity_store);
 
         // Song names and artists are stored in string-arrays in a resource file so we need
         // to retrieve them first
@@ -36,25 +34,10 @@ public class MusicListActivity extends AppCompatActivity {
         }
 
         // The ArrayList is used for a new custom adapter
-        SongAdapter adapter = new SongAdapter(this, songs) ;
+        GridAdapter adapter = new GridAdapter(this, songs) ;
 
-        ListView songList = findViewById(R.id.songList);
+        GridView songList = findViewById(R.id.gridList);
 
         songList.setAdapter(adapter);
-
-        // The following code is set in order to, when a Song is clicked, send the song infos to the PlaySong Activity
-       songList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-           @Override
-           public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-               Song song = (Song) adapterView.getItemAtPosition(i) ;
-               Intent intent = new Intent(MusicListActivity.this, PlaySongActivity.class) ;
-               intent.putExtra("songImage", song.getImage()) ;
-               intent.putExtra("songName", song.getSongName()) ;
-               intent.putExtra("songArtist", song.getArtist()) ;
-               startActivity(intent);
-
-           }
-       });
-
     }
 }

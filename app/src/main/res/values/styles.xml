@@ -8,7 +8,6 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-
     <!-- Style used for main buttons in main activity screen -->
 
     <style name="mainLayout">
@@ -42,13 +41,23 @@
         <item name="android:textSize">@dimen/buttonTextSize</item>
     </style>
 
-    <style name="AppTheme.NoActionBar">
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
+    <!-- Styles used for PlaySong Activity -->
+
+    <style name="playImageStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/grandImageHeight</item>
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:padding">@dimen/playSongPadding</item>
     </style>
 
-    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="playTextStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/backgroundPrimary</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:padding">@dimen/playSongPadding</item>
+        <item name="android:textSize">@dimen/playSongTextSize</item>
+    </style>
 
-    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
 </resources>

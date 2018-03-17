@@ -2,8 +2,16 @@
     <string name="app_name">Music Player App</string>
 
     <!-- Strings for Main activity -->
+
     <string name="musicString">Music</string>
     <string name="storeString">Store</string>
     <string name="searchString">Search</string>
+
+    <!-- Labels -->
+
+    <string name="musicList">Song List</string>
+    <string name="musicSearch">Find a song</string>
+    <string name="musicStore">Buy a song</string>
+    <string name="playString">Now Playing</string>
 
 </resources>

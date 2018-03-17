@@ -12,16 +12,21 @@
     <dimen name="imagePadding">8dp</dimen>
     <dimen name="buttonTextSize">20sp</dimen>
 
-
     <!-- List song layout dimensions -->
 
     <dimen name="paddingStandard">16dp</dimen>
     <dimen name="imageDimensions">50dp</dimen>
     <dimen name="textLayout">0dp</dimen>
 
-
     <!-- Play song layout dimensions -->
 
     <dimen name="grandImageHeight">200dp</dimen>
+    <dimen name="playSongPadding">16dp</dimen>
+    <dimen name="playSongTextSize">20sp</dimen>
+    <dimen name="playButtonsLine">100dp</dimen>
+
+    <!-- Grid layout dimensions -->
+
+    <dimen name="gridCard">150dp</dimen>
 
 </resources>
